@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best Fighters of the 2000s</title> 
+    <!-- Link to external stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+  <body>
+    <!-- HEADER / NAVBAR --> 
+    <header>
+      <img src="https://cdn.brandfetch.io/idxk9D_WX0/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" id="ringlogo" style="width:200px; height:auto;"/>
+      <h1>Best Fighters of the 2000s</h1>
+      <nav class="horizontal-nav">
+        <ul>
+          <li><a class="bounce-link" href="/">Home</a></li>
+          <li><a class="bounce-link" href="/fighters">Featured Fighters</a></li>
+          <li><a class="bounce-link" href="/fanblog">Fan Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- Dropdown menu for divisions -->
+      <div class="dropdown"> 
+        <label for="divisions">Divisions:</label> 
+        <select id="divisions" onchange="location.href=this.value;">
+          <option value="#junior-lightweight">Junior Lightweight</option> 
+          <option value="#lightweight">Lightweight</option> 
+          <option value="#junior-welterweight">Junior Welterweight</option> 
+          <option value="#welterweight">Welterweight</option> 
+          <option value="#junior middleweight">Junior Middleweight</option>
+          <option value="#middleweight">Middleweight</option> 
+          <option value="#super-middleweight">Super Middleweight</option> 
+          <option value="#light-heavyweight">Light Heavyweight</option>
+          <option value="#cruiserweight">Cruiserweight</option> 
+          <option value="#heavyweight">Heavyweight</option> 
+        </select>
+      </div>
+
+      <!-- JUNIOR LIGHTWEIGHT -->
+      <section class="division" id="junior-lightweight">
+        <h2>Junior-Lightweight</h2>
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/floyd-mayweather" target="_blank">Floyd Mayweather</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/manny-pacquiao" target="_blank">Manny-pacquiao</a></li> 
+          <li><a href="https://boxrec.com/en/box-pro/12222" target="_blank">Juan-Manuel Marquez</a></li> 
+        </ul>
+      </section>
+
+      <!-- LIGHTWEIGHT -->
+      <section class="division" id="lightweight">
+        <h2>Lightweight</h2> 
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/floyd-mayweather" target="_blank">Floyd Mayweather</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/manny-pacquiao" target="_blank">Manny-pacquiao</a></li> 
+          <li><a href="https://boxrec.com/en/box-pro/12222" target="_blank">Juan-Manuel Marquez</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/vasyl-lomachenko-1" target="_blank">Vasyl Lomachenko</a></li> 
+        </ul>
+      </section>
+
+      <!-- JUNIOR WELTERWEIGHT -->
+      <section class="division" id="junior-welterweight">
+        <h2>Junior-Welterweight</h2>
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/terence-crawford-98" target="_blank">Terence Crawford</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/floyd-mayweather" target="_blank">Floyd Mayweather</a></li>
+          <li><a href="https://ringmagazine.com/en/fighters/manny-pacquiao" target="_blank">Manny-pacquiao</a></li> 
+        </ul>
+      </section>
+
+      <!-- WELTERWEIGHT -->
+      <section class="division" id="welterweight">
+        <h2>Welterweight</h2> 
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/terence-crawford-98" target="_blank">Terence Crawford</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/floyd-mayweather" target="_blank">Floyd Mayweather</a></li> 
+          <li><a href="https://boxrec.com/en/box-pro/3254" target="_blank">Felix Trinidad</a></li> 
+        </ul>
+      </section>
+
+      <!-- JUNIOR MIDDLEWEIGHT -->
+      <section class="division" id="junior-middleweight">
+        <h2>Junior Middleweight</h2> 
+        <ul>
+          <li><a href="https://ringmagazine.com/en/fighters/floyd-mayweather" target="_blank">Floyd Mayweather</a></li> 
+          <li><a href="https://boxrec.com/en/box-pro/3600" target="_blank">Ronald 'Winky' Wright</a></li>
+          <li><a href="https://ringmagazine.com/en/fighters/jermell-charlo-350" target="_blank">Jermell Charlo</a></li> 
+        </ul>
+      </section>
+
+      <!-- MIDDLEWEIGHT -->
+      <section id="middleweight" class="division">
+        <h2>Middleweight</h2>
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/bernard-hopkins" target="_blank">Bernard Hopkins</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/saul-alvarez-77" target="_blank">Canelo Alvarez</a></li>
+          <li><a href="https://ringmagazine.com/en/fighters/gennady-golovkin" target='_blank'>Gennady "GGG" Golovkin</a></li>
+        </ul>
+      </section>
+
+      <!-- SUPER MIDDLEWEIGHT -->
+      <section class="division" id="super-middleweight">
+        <h2>Super Middleweight</h2> 
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/roy-jones-jr-1" target=_blank>Roy Jones Jr</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/andre-ward" target=_blank>Andre Ward</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/saul-alvarez-77" target=_blank>Canelo Alvarez</a></li> 
+        </ul>
+      </section>
+
+      <!-- LIGHT HEAVYWEIGHT -->
+      <section id="light-heavyweight" class="division">
+        <h2>Light Heavyweight</h2>
+        <ul>
+          <li><a href="https://ringmagazine.com/en/fighters/roy-jones-jr-1" target=_blank>Roy Jones Jr</a></li>
+          <li><a href="https://ringmagazine.com/en/fighters/dmitry-bivol-392" target="_blank">Dimitri Bivol</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/artur-beterbiev-182" target="_blank">Artur Beterbiev</a></li>
+        </ul>
+      </section>
+
+      <!-- CRUISERWEIGHT -->
+      <section id="cruiserweight" class="division">
+        <h2>Cruiserweight</h2> 
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/oleksandr-usyk-175" target="_blank">Oleksandr Usyk </a></li> 
+          <li><a href="https://boxrec.com/en/box-pro/155774" target="_blank">David Haye</a></li> 
+          <li><a href="https://boxrec.com/en/box-pro/514537" target="_blank">Mairius Bredis</a></li> 
+        </ul>
+      </section>
+
+      <!-- HEAVYWEIGHT -->
+      <section id="heavyweight" class="division">
+        <h2>Heavyweight</h2> 
+        <ul> 
+          <li><a href="https://ringmagazine.com/en/fighters/oleksandr-usyk-175" target="_blank">Oleksandr Usyk</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/wladimir-klitschko" target="_blank">Wladimir 'Dr Steelhammer' Klitchko</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/vitali-klitschko" target="_blank">Vitali 'Dr Ironfirst' Klitchko</a></li> 
+          <li><a href="https://ringmagazine.com/en/fighters/anthony-joshua-1092">Anthony Joshua</a></li> 
+        </ul>
+      </section>
+
+      <!-- NAVIGATION LINKS -->
+      <nav> 
+        <a href="#rankings">Rankings</a> 
+        <a href="#featured">Featured Boxer</a> 
+        <a href="#about">About</a> 
+      </nav>
+
+      <!-- RANKINGS TABLE -->
+      <a href="#rankings">Rankings</a>
+<a href="#featured">Featured Boxer</a>
+<a href="#about">About</a>
+</nav>
+
+<section id="rankings">
+  <h2>Official Rankings</h2>
+  <table border="1" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Boxer</th>
+        <th>Weight Class</th>
+        <th>Record</th>
+        <th>Record in world tittle fights</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td id="terence-crawford">
+          <a href="https://ringmagazine.com/en/fighters/terence-crawford-98" target="_blank">Terence Crawford</a>
+        </td>
+        <td>Super Middleweight</td>
+        <td>42–0 (31 KOs)</td>
+        <td>17-0</td>
+      </tr>
+
+      <tr>
+        <td id="oleksandr-usyk">
+          <a href="https://ringmagazine.com/en/fighters/oleksandr-usyk-175" target="_blank">Oleksandr Usyk</a>
+        </td>
+        <td>Heavyweight</td>
+        <td>24–0 (15 KOs)</td>
+        <td>17-0</td>
+      </tr>
+
+      <tr>
+        <td id="naoya-inoue">
+          <a href="https://ringmagazine.com/en/fighters/naoya-inoue-140" target="_blank">Naoya Inoue</a>
+        </td>
+        <td>Super Bantamweight</td>
+        <td>31-0 (27 KOs)</td>
+        <td>12-0</td>
+      </tr>
+
+      <tr>
+        <td id="dimitri-bivol">
+          <a href="https://ringmagazine.com/en/fighters/dmitry-bivol-392" target="_blank">Dimitry Bivol</a>
+        </td>
+        <td>Light Heavyweight</td>
+        <td>24-1 (15KOs)</td>
+        <td>11-1</td>
+      </tr>
+
+      <tr>
+        <td id="artur-beterbiev">
+          <a href="https://ringmagazine.com/en/fighters/artur-beterbiev-182" target=_blank>Artur Beterbiev</a>
+        </td>
+        <td>Light Heavyweight</td>
+        <td>22-1 (20KOs)</td>
+        <td>10-1</td>
+      </tr>
+
+      <tr>
+        <td id="jesse-rodriguez">
+          <a href="https://ringmagazine.com/en/fighters/jesse-rodriguez-189" target="_blank">Jesse 'Bam' Rodriguez</a>
+        </td>
+        <td>Super Flyweight</td>
+        <td>22-0 (15KOs)</td>
+        <td>10-0</td>
+      </tr>
+
+      <tr>
+        <td id="david-benavidez">
+          <a href="https://ringmagazine.com/en/fighters/david-benavidez-609" target=_blank>David Benavidez</a>
+        </td>
+        <td>Light Heavyweight</td>
+        <td>30-0 (24KOs)</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td id="shakur-stevenson">
+          <a href="https://ringmagazine.com/en/fighters/shakur-stevenson-623" target="_blank">Shakur Stevenson</a>
+        </td>
+        <td>Lightweight</td>
+        <td>24-0 (11KOs)</td>
+        <td>10-0</td>
+      </tr>
+
+      <tr>
+        <td id="teofimo-lopez">
+          <a href="https://ringmagazine.com/en/fighters/teofimo-lopez-399">Teofimo Lopez</a>
+        </td>
+        <td>Super Lightweight</td>
+        <td>22-1 (13KOs)</td>
+        <td>8-1</td>
+      </tr>
+
+      <tr>
+        <td id="junto-nakatani">
+          <a href="https://ringmagazine.com/en/fighters/junto-nakatani-133" target="_blank">Junto Nakatani</a>
+        </td>
+        <td>Super Bantamweight</td>
+        <td>31-0 (24KOs)</td>
+        <td>6-0</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<br>
+<!-- END OF THE TABLE -->
+
+      <!-- Dropdown for favorite fighter -->
+      <div class="dropdown"> 
+        <label for="number1fighter">Choose your #1 Fighter:</label> 
+        <select id="number1fighter" onchange="location.href=this.value;">
+          <option value="#terence-crawford">Terence Crawford</option> 
+          <option value="#dimitri-bivol">Dimitri Bivol</option> 
+          <option value="#shakur-stevenson">Shakur Stevenson</option> 
+          <option value="#naoya-inoue">Naoya Inoue</option>
+          <option value="#junto-nakatani">Junto Nakatani</option>
+          <option value="#david-benavidez">David Benavidez</option>
+          <option value="#jesse-rodriguez">Jesse 'Bam' Rodriguez </option>
+        </select>
+      </div> 
+
+      <!-- Featured Fighter -->
+      <div class="featured-flabel">
+        <label for="featured-flabel">Choose your #1 Fighter:</label>
+        <div class="featured-fighter_info">
+          <h2>Featured Fighter</h2>
+        </div>
+      </div>
+
+      <!-- Fighter stats and bio -->
+      <h3>Captain Hook</h3>
+      <h4>Roy Jones Jr</h4>
+
+      <div class="featured-fighter_row">
+        <span class="featured-fighter_label">DOB:</span>
+        <span class="featured-fighter_value">JAN 16, 1969</span>
+      </div>
+      <div class="featured-fighter_row">
+        <span class="featured-fighter_label">Nationality:</span>
+        <span class="featured-fighter_value">USA</span>
+      </div>
+      <div class="featured-fighter_row">
+        <span class="featured-fighter_label">Height:</span>
+        <span class="featured-fighter_value">5’10¾″</span>
+      </div>
+      <div class="featured-fighter_row">
+        <span class="featured-fighter_label">Weight:</span>
+        <span class="featured-fighter_value">175 lbs</span>
+      </div>
+
+      <!-- Fight record -->
+      <div class="featured-fighter_record">
+        <div class="record-item">
+          <span class="record-label">Total Fights</span>
+          <span class="record-value">76</span>
+        </div>
+        <div class="record-item">
+          <span class="record-label">Wins</span>
+          <span class="record-value">66</span>
+        </div>
+        <div class="record-item">
+          <span class="record-label">KOs</span>
+          <span class="record-value">47</span>
+        </div>
+        <div class="record-item">
+          <span class="record-label">Loss</span>
+          <span class="record-value">10</span>
+        </div>
+        <div class="record-item">
+          <span class="record-label">Draw</span>
+          <span class="record-value">0</span>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="featured-fighter_bio">
+        <p>Roy Jones Jr. is considered one of the greatest boxers of all time...</p>
+      </div>
+
+      <!-- YouTube video -->
+      <div class="featured-fighter_video">                                            
+        <iframe src="https://www.youtube.com/embed/t4OJRdi7W-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" alt="Bud-Benavidez" allowfullscreen></iframe>
+      </div>
+
+      <!-- About section -->
+      <section id="about">
+        <h2>About This Page</h2>
+        <p>This ranking list was created as a personal project to practise HTML structure and celebrate the world’s best fighters.</p>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <hr> 
+      <p>Created by Malakai Moodie | Last updated: November 2025</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <title>Riyadh Season Review</title>
+</head>
+
+<body>
+  <!-- HEADER/ NAV BAR -->
+  <header class="page-header">
+    <img src="https://cdn.brandfetch.io/idxk9D_WX0/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B" id="ringmazlogo" style="width:200px; height:auto;"/>
+    <h1>IV Crown Showdown: Beterbiev Vs Bivol</h1>
+    <nav class="horizontal-nav">
+      <ul>
+        <li><a class="bounce-link" href="/">Home</a></li>
+        <li><a class="bounce-link" href="/fighters">Featured Fighters</a></li>
+        <li><a class="bounce-link" href="/fanblog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN BLOG CONTENT -->
+   <main class="blog-container">
+          <section class="blog-section">
+          <article>
+          <h2 class="sub-title">Fight Review</h2>
+          <p>One of the most anticipated fights of the last twenty years. WBO,WBC,IBF Champion <a href="https://ringmagazine.com/en/fighters/artur-beterbiev-182" target="_blank">Artur Beterbiev</a> and WBA, IBO Champion <a href="https://ringmagazine.com/en/fighters/dmitry-bivol-392" target="_blank">Dimitry Bivol</a> fought for the Undisputed Light Heavyweight Championship of the World, with this being the first unification in the division in 23 years since the great<a href="https://ringmagazine.com/en/fighters/roy-jones-jr-1" target="_blank">Roy Jones Jr</a> held this distinction. The fight was the opening event of the Riyadh Season, And took place in the Kingdom Arena, Riyadh, Saudi Arabia.</p></article></section>
+
+
+    <!-- Action Section -->
+    <h2 class="sub-title">The Action</h2>
+            
+            <section class="blog-section">
+            <article>
+            <p>This was not a fight filled with any knockdowns but demonstrated the elite boxing acumen of both men, With there being several shifts in the fight. During the earlier rounds Beterbiev expectedly started off on the front foot throwing thudding shots, whilst Bivol used lateral movement to keep his russian counterpart constantly moving. This became the story of the fight with the looming question being will Bivol be able to keep up this constant movement. Despite doing so Beterbiev's constant pressure and ring generalship earned him the Majority decison in what was a great fight.</p></article></section>
+    
+
+    <!-- Fan View Video -->
+    <section class="blog-section fight-video">
+      <h2 class="sub-title">Fan View</h2>
+      <div class="video-container">
+        <video src="https://files.catbox.moe/3vgqw1.MP4" width="640" height="360" controls></video>
+      </div>
+    </section>
+
+    <!-- COMMENT FORM -->
+    <section class="blog-section">
+      <h2 class="sub-title">Leave a Comment</h2>
+      <form id="commentForm" class="comment-form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <textarea id="comment" placeholder="Your comment" required></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+
+      <div id="commentsSection" class="comments-section"></div>
+    </section>
+  </main>
+
+  <script>
+  // Load comments from backend
+  function loadComments() {
+      fetch("/api/comments")
+          .then(res => res.json())
+          .then(data => {
+              const section = document.getElementById("commentsSection");
+              section.innerHTML = "";
+
+              if (data.comments && data.comments.length > 0) {
+                  data.comments.forEach(c => {
+                      const div = document.createElement("div");
+                      div.className = "comment-box";
+                      div.innerHTML = `<strong>${c.name}</strong><p>${c.comment}</p>`;
+                      section.appendChild(div);
+                  });
+              } else {
+                  section.innerHTML = "<p>No comments yet.</p>";
+              }
+          })
+          .catch(err => console.error("Error fetching comments:", err));
+  }
+
+  // Submit new comment
+  document.getElementById("commentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const newComment = {
+          name: document.getElementById("name").value,
+          comment: document.getElementById("comment").value
+      };
+
+      fetch("/api/add_comment", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(newComment)
+      })
+      .then(res => res.json())
+      .then(data => {
+          loadComments();
+          document.getElementById("commentForm").reset();
+      })
+      .catch(err => console.error("Error posting comment:", err));
+  });
+
+  loadComments();
+  </script>
+</body>
+</html>

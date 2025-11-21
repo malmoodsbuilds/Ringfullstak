@@ -1,0 +1,531 @@
+  /* ======================================================
+   GENERAL STYLES
+   ====================================================== */
+#logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+#ringmagzlogo{ 
+  border: none;
+  background: transparent;
+}
+
+.blog-section p {
+    background-color: #edc988;
+    color: black;
+    border: 2px solid #a40000;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    object-fit: cover;
+    display: block;
+    margin: 50px;
+    padding: 8px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img {
+    border: 2px solid #a40000; 
+    border-radius: 5px; 
+    padding: 8px 12px; 
+}
+
+body {
+    background-color: #edc988;
+    color: #f5f5f5;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Figtree", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ======================================================
+   HEADER SECTION
+   ====================================================== */
+header {
+    background-color: #edc988; /* Turns header background red */
+    color: white;
+    text-align: center;
+    padding: 25px 10px;
+    padding-bottom: 50px;
+    border-bottom: 3px solid #ffd4dd; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header h1:hover
+
+header p {
+    margin: 5px 0 15px;
+    color: #f2f2f2; 
+    font-size: 1.1em;
+}
+
+/* Links */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover { 
+    color: red;   
+}
+
+.bounce-link {
+  display: inline-block;         /* necessary for transform to work */
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+/* Animation on hover */
+.bounce-link:hover {
+  animation: bounce 0.6s;
+}
+
+/* Keyframes define the bounce motion */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-15px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+
+
+/* ======================================================
+   NAVIGATION SECTION
+   ====================================================== */
+.horizontal-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-nav a {
+    color: white;
+    font-weight: bold;
+    
+}
+
+.horizontal-nav a:hover {
+    color: #ff4d4d;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #edc988;
+    
+}
+
+nav li {
+    display: table-cell; 
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    position: 
+}
+
+nav li a:hover {
+    color: red;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 13px;
+}
+
+/* Navigation links by anchor */
+nav a[href="#rankings"],
+nav a[href="#featured"],
+nav a[href="#about"] {
+    color: white;
+    background-color: #1e1e1e;
+    font-weight: bold;
+    border-radius: 13px;
+}
+
+nav a[href="#about"]:hover,
+nav a[href="#featured"]:hover,
+nav a[href="#rankings"]:hover {
+    color: red;
+    background-color: black;
+    font-weight: bold;
+    border-radius: 19px;
+    margin: 0 auto;
+}
+
+/* ======================================================
+   DROP DOWN MENU
+   ====================================================== */
+.dropdown {
+    text-align: left 5px; 
+    margin-left: 40px;
+ 
+}
+
+label {
+    font-weight: bold;
+    color: black;
+    margin-right: 8px;
+    font-size: 1.1em;
+    position: relative;
+}
+
+label:hover{
+  color: ;
+}
+/* SELECT BOX STYLING */
+select {
+    background-color: #2a2a2a;
+    color: black;
+    border: 2px solid #a40000; 
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+select option:hover { 
+    color: red;
+}
+
+select:hover {
+    background-color: #3a3a3a;
+    border-color: #ff4d4d;
+}
+
+/* ======================================================
+   MAIN CONTENT
+   ====================================================== */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.division {
+    background-color: #2a2a2a; 
+    margin-bottom: 25px;
+    padding: 20px;
+    border-left: 6px solid #a4000;
+    border-radius: 6px;
+}
+
+.division h2 {
+    color: #ff4d4d;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.division ul {
+    list-style: none;
+    padding-left: 0;
+    position:center;
+}
+
+.division li {
+    margin: 10px 0;
+}
+
+.division a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-weight: 
+    transition: 0.3s;
+}
+
+.division a:hover {
+    color: #ff4d4d;
+    text-decoration: underline;
+}
+
+
+/* TABLE STYLING AT THE BOTTOM */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom: 20px;
+}
+
+th{
+  background-color: a#4000;
+  color:#fff;
+  padding:10px 8px;
+}
+
+td, th{
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Additional links */
+nav a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+td a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+td a:hover {
+    color: #ff4d4d;
+}
+
+section h2:hover {
+    color: #ff4d4d;
+}
+
+h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+h3 a:hover {
+    color: #ff4d4d;
+}
+
+div label {
+    justify-content: left 30px; /* ⚠ Invalid value */
+}
+
+/* ======================================================
+   FIGHTER CARDS - Ring Magazine Style with iframe
+   ====================================================== */
+.fighter-container {
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    
+    width:100%;
+    gap: 20px;
+}
+
+.fighter-card {
+    background-color: #1e1e1e; /* Dark base for contrast */
+    border-radius: 12px;
+    border: 1px solid #ffd700; /* Gold accent like a magazine frame */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: sticky;
+    font-family: 'Arial Black', Arial, sans-serif;
+    display: inline-block;  
+    width: 32%; 
+}
+
+
+
+.fighter-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(255, 215, 0, 0.6);
+}
+
+/* Image at the top of the card */
+.fighter-card img {
+    width: 100%;
+    height: 180px; /* slightly smaller to fit iframe below */
+    object-fit:cover;
+    display: inline;
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Info section below image */
+.fighter-info {
+    padding: 15px;
+    background: linear-gradient(to bottom, #1e1e1e, #2a2a2a);
+    color: #fff;
+}
+
+.fighter-info h2 {
+    margin: 0 0 10px;
+    font-size: 1.4em;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+.fighter-info h2:hover {
+    color: #ff4d4d;
+    transition: color 0.3s;
+}
+
+.record {
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #ddd;
+    line-height: 1.3em;
+}
+
+/* Gradient stripe at the top for "magazine" look */
+.fighter-card::before {
+    content: '';
+    position: fi
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #ff4d4d, #ffd700, #ff4d4d);
+}
+
+/* ======================================================
+   IFRAME - embed video or stats
+   ====================================================== */
+.fighter-card iframe {
+    width: 100%;
+    height: 180px; /* matches image height */
+    border: none;
+    display: block;
+    object-fit: cover;
+    margin-top: 0;
+    border-bottom: 2px solid #ffd700;
+}
+
+.video-container{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+/* FEATURED FIGHTER BOX SECTION */
+/* =========================
+   Parent container
+   ========================= */
+.featured-fighter_info {
+  background-color:white;
+  color:black; /* White background for the card */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 10px;    /* Rounded corners */
+  padding: 1.5rem;        /* Inner spacing */
+  max-width: 400px;       /* Limit width of card */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Font family */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  margin: 1rem auto;      /* Center card with top/bottom margin */
+  pos
+}
+
+
+/* =========================
+   Fighter name / nickname
+   ========================= */
+.fighter-nickname {
+  color: black;            /* Medium gray for nickname */
+  font-size: 1.2rem;      /* Slightly smaller font than name */
+  margin-bottom: 0.25rem; /* Space below nickname */
+
+
+}
+
+.fighter-name {
+  color: #111;            /* Darker color for main name */
+  font-size: 1.5rem;      /* Larger font for name */
+  margin-bottom: 1rem;    /* Space below name before stats */
+  display: visible;
+}
+
+/* =========================
+   Basic stats rows
+   ========================= */
+.featured-fighter_row {
+  display: flex;              /* Arrange label and value in a row */
+  justify-content: space-between; /* Space between label and value */
+  margin-bottom: 0.5rem;      /* Spacing between rows */
+}
+
+.featured-fighter_label {
+  font-weight: bold;          /* Bold labels */
+  color: black;                /* Dark gray color */
+}
+
+.featured-fighter_value {
+  color: black;                /* Medium gray color for value */
+}
+
+/* =========================
+   Fight Record
+   ========================= */
+.featured-fighter_record {
+  display: flex;              /* Arrange record items in a row */
+  flex-wrap: wrap;            /* Wrap items to next line if necessary */
+  gap: 0.5rem;                /* Space between items */
+  margin-top: 1rem;           /* Space above record section */
+  margin-bottom: 1rem;        /* Space below record section */
+  color: black;
+}
+
+.record-item {
+  flex: 1 1 100px;            /* Allow items to grow/shrink, min width 100px */
+  text-align: center;          /* Center text inside each item */
+  background-color: grey;  /* Light gray background */
+  padding: 0.5rem 1rem;       /* Inner padding */
+  border-radius: 8px;         /* Rounded corners */
+  border: 1px solid #ddd;     /* Light gray border */
+}
+
+.record-label {
+  display: block;              /* Stack label above value */
+  font-weight: bold;           /* Bold text for label */
+
+
+/* Container for the video */
+.featured-fighter_video {
+  width: 100%;             /* Fill the width of the card */
+  aspect-ratio: 16 / 9;    /* Keep standard video shape */
+  overflow: hidden;        /* No overflow */
+  border-radius: 8px;      /* Rounded corners */
+  margin-top: 1rem;        /* Space above */
+  position: relative;      /* Needed for child to fill container */
+  display:flex;
+  justify-content: center;     /* Center horizontally */
+  align-items: center;         /* Center vertically */
+} 
+
+.featured-fighter_video iframe 
+{
+position: absolute;      /* Fill the container */
+  top: 0;
+  left: 0;
+  width: 100%;             /* Take up full container width */
+  height: 100%;            /* Take up full container height */
+  border: none;            /* Remove default border */  
+  object-fit: cover; 
+}
+    
+
+.featured-flabel {
+  display: flex;
+  flex-direction: column; /* stack label and card vertically */
+  align-items: center; /* center them horizontally */
+}
+
+.featured-flabel label {
+  font-weight: bold;
+  margin-bottom: 10px; /* adds space between label and card */
+  text-align: center;
+}
